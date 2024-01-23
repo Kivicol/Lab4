@@ -19,6 +19,7 @@ public class Things extends AbsEnt {
         System.out.println("Что-то с названием \"" + name + "\" было создано\n\033[36mЗдоровье объекта \"" + name + "\": " + HP + "\033[0m");
     }
 
+    //нестатический вложенный класс
     public class impression {
         static String nameimp = "впечатление";
         @Override
@@ -29,6 +30,8 @@ public class Things extends AbsEnt {
             System.out.println("Было произведенено \"" + nameimp + "\"");
         }
     }
+
+    //статический вложенный класс
     public static class yavaute {
         static String nameaut = "конфуз";
         @Override

@@ -44,7 +44,8 @@ public class Place extends AbsPlace {
         System.out.println(place_name +" инициализирована как " + "(" + type_name + ")");
     }
 
-    public void newPlace(String place_name) {
+    //локальный класс
+    public void newWoahPlace(String place_name) {
         class new_Place {
             private Date datelol;
             private final String place_name;

@@ -17,16 +17,18 @@ public class Main {
         door.setType(Places.DOOR);
         Place shelves = new Place("Локация5");
         shelves.setType(Places.SHELVES);
-        shelves.newPlace("ПОЛКИ!!!1!!!11!!1!11");
+        shelves.newWoahPlace("ПОЛКИ!!!1!!!11!!1!11");
 
         System.out.println("----------------------------------------------------------------------");
 
+        //анонимный класс
         StartLife newBeginning = new StartLife(){
             @Override
             public void newStartForLife() {
                 System.out.println("Да будет свет!");
             }
         };
+
         newBeginning.newStartForLife();
         Things friends = new Things("Друзья");
         Things korotyshki = new Things("Группа коротышек");
