@@ -17,7 +17,7 @@ public class Main {
         door.setType(Places.DOOR);
         Place shelves = new Place("Локация5");
         shelves.setType(Places.SHELVES);
-        shelves.newWoahPlace("ПОЛКИ!!!1!!!11!!1!11");
+        shelves.newWoahPlace();
 
         System.out.println("----------------------------------------------------------------------");
 

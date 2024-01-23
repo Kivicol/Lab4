@@ -31,7 +31,7 @@ public class Things extends AbsEnt {
         }
     }
 
-    //статический вложенный класс
+    //статический внутренний класс
     public static class yavaute {
         static String nameaut = "конфуз";
         @Override

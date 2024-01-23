@@ -45,16 +45,16 @@ public class Place extends AbsPlace {
     }
 
     //локальный класс
-    public void newWoahPlace(String place_name) {
+    public void newWoahPlace() {
         class new_Place {
             private Date datelol;
-            private final String place_name;
+            private String place_name;
             public new_Place(String place_name) {
                 this.datelol = new Date();
-                this.place_name = place_name;
+                this.place_name = type.getName().toUpperCase();
             }
             public void show_details() {
-                System.out.println("Не может быть!!!!!!!!!!!! Вы создали место \"" + place_name + "\" ровно в это время: \"" + datelol.getHours() + ":" + datelol.getMinutes() + "\" !!!!!!!!!!!!");
+                System.out.println("Не может быть!!!!!!!!!!!! Вы создали место \"" + place_name + "\"!!!1!!!11!!1!11 ровно в это время: \"" + datelol.getHours() + ":" + datelol.getMinutes() + "\" !!!!!!!!!!!!");
             }
         }
         new_Place aboba = new new_Place(place_name);
