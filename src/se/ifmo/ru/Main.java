@@ -41,7 +41,6 @@ public class Main {
         Things kozlik = new Things("Козлик");
         Things impress = new Things();
         Things.impression imp = impress.new impression();
-        Things.yavaute mozgovzryv = new Things.yavaute();
 
         System.out.println("----------------------------------------------------------------------");
 
