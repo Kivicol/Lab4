@@ -24,7 +24,7 @@ public abstract class AbsEnt implements IntObj, HonestReaction {
     }
     public void damageGet(Integer damage){
         this.HP -= damage;
-        System.out.println("\033[36mОбъект \"" + this.name + "\" получил урон: -" + damage + "\nЗдоровье объекта \"" + this.name + "\": " + this.HP + "\033[0m");
+        System.out.println("\033[36mОбъект \"" + this.name + "\" получил урон: " + damage + "\nЗдоровье объекта \"" + this.name + "\": " + this.HP + "\033[0m");
     }
     public void checkHP() {
         try {

@@ -19,6 +19,27 @@ public class Things extends AbsEnt {
         System.out.println("Что-то с названием \"" + name + "\" было создано\n\033[36mЗдоровье объекта \"" + name + "\": " + HP + "\033[0m");
     }
 
+    public class impression {
+        static String nameimp = "впечатление";
+        @Override
+        public String toString() {
+            return nameimp;
+        }
+        public static void impression(){
+            System.out.println("Было произведенено \"" + nameimp + "\"");
+        }
+    }
+    public static class yavaute {
+        static String nameaut = "конфуз";
+        @Override
+        public String toString() {
+            return nameaut;
+        }
+        public static void zhostkiyaut(){
+            System.out.println("Незнайка словил мощнейший \"" + nameaut + "\"");
+        }
+    }
+
     public String chracteristic(Condition condition) {
         this.condition = condition;
         switch (condition) {
@@ -120,7 +141,7 @@ public class Things extends AbsEnt {
                 System.out.print(", ");
             }
         }
-        if (smelliness != 0) {
+        if (smelliness > 0) {
             System.out.println("\n\033[36mВоняет с силой: " + smelliness + "\033[0m");;
             odor = smelliness;
         }
