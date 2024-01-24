@@ -39,9 +39,9 @@ public abstract class AbsEnt implements IntObj, HonestReaction {
         Invul = false;
         try{
             if (this.HP <= 0){
-                throw new IsHeDeadYetException("Незнайка? Незнайка! НЕЗНАЙКААА!");
+                throw new WhatsWithHP("Незнайка? Незнайка! НЕЗНАЙКААА!");
             }
-        }catch (IsHeDeadYetException a)
+        }catch (WhatsWithHP b)
         {
             System.err.println("Погиб поэт, невольник чести.");
             System.exit(0);
