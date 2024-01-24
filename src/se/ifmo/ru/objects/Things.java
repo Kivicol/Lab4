@@ -19,8 +19,8 @@ public class Things extends AbsEnt {
         System.out.println("Что-то с названием \"" + name + "\" было создано\n\033[36mЗдоровье объекта \"" + name + "\": " + HP + "\033[0m");
     }
 
-    //нестатический вложенный класс
-    public class impression {
+    //статический внутренний класс
+    public static class impression {
         static String nameimp = "впечатление";
         @Override
         public String toString() {
@@ -31,15 +31,15 @@ public class Things extends AbsEnt {
         }
     }
 
-    //статический внутренний класс
-    public static class yavaute {
-        static String nameaut = "конфуз";
+    //нестатический вложенный класс
+    public class yavaute {
+        public String nameaut = "конфуз";
         @Override
         public String toString() {
             return nameaut;
         }
-        public static void zhostkiyaut(){
-            System.out.println("Незнайка словил мощнейший \"" + nameaut + "\"");
+        public void zhostkiyaut(){
+            System.out.println(name + " словил мощнейший \"" + nameaut + "\"");
         }
     }
 
@@ -151,7 +151,10 @@ public class Things extends AbsEnt {
     }
 
 
-
+    @Override
+    public String toString() {
+        return name;
+    }
     @Override
     public String getName() {
         return name;

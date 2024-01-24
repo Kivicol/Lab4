@@ -39,8 +39,7 @@ public class Main {
         Things inhabitants = new Things("Обитатели");
         Things clothes = new Things("Вещи");
         Things kozlik = new Things("Козлик");
-        Things impress = new Things();
-        Things.impression imp = impress.new impression();
+        Things.yavaute udivlenie = neznayka.new yavaute();
 
         System.out.println("----------------------------------------------------------------------");
 
@@ -58,7 +57,7 @@ public class Main {
 
         neznayka.chracteristic(Condition.LOOKRND);
         Things.impression.impression();
-        Things.yavaute.zhostkiyaut();
+        udivlenie.zhostkiyaut();
         room.placeCondition(neznayka.reactiontothis(Reaction.LIKEKATALAZHKA));
 
         System.out.println("----------------------------------------------------------------------");
