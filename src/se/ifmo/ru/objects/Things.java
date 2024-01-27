@@ -20,7 +20,7 @@ public class Things extends AbsEnt {
     }
 
     //статический внутренний класс
-    public static class impression {
+    public static class impress {
         static String nameimp = "впечатление";
         @Override
         public String toString() {

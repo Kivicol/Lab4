@@ -56,7 +56,7 @@ public class Main {
         System.out.println("----------------------------------------------------------------------");
 
         neznayka.chracteristic(Condition.LOOKRND);
-        Things.impression.impression();
+        Things.impress.impression();
         udivlenie.zhostkiyaut();
         room.placeCondition(neznayka.reactiontothis(Reaction.LIKEKATALAZHKA));
 
